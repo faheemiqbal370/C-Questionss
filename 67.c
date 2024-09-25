@@ -8,6 +8,7 @@ int main()
     printf("Enter the string\n");
     scanf("%s",str);
     printf("The actual string is %s\n",str);
+
     p=&str[0];
     while(*p!='\0')
         p++,n++;
@@ -20,7 +21,6 @@ int main()
        p--;
        i++;
     }
-    printf("\nLength of string is\n%d",i);
     
     return 0;
 }

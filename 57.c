@@ -15,7 +15,7 @@ int main()
     printf("Enter any natural number\n");
     scanf("%d", &x);
     if (factorial(x) == -1)
-        printf("Factorial is not defined for negative numbers. ");
+        printf("Factorial is not defined for negative numbers");
     else
         printf("Factorial of %d is %lld", x, factorial(x));
 

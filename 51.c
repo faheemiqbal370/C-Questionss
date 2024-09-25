@@ -4,7 +4,7 @@
 int main()
 {
     int i, j, m, sum = 0;
-    printf("Enter the number of rows and coloumns\n ");
+    printf("Enter the number of rows and columns\n ");
     scanf("%d", &m);
     int a[m][m], b[m][m];
     printf("Enter the elements row by row\n");
@@ -17,7 +17,7 @@ int main()
                 sum = sum + a[i][j];
         }
     }
-    printf("Matrix is: \n");
+    printf("Matrix is \n");
     for (i = 0; i < m; i++)
     {
         for (j = 0; j < m; j++)

@@ -9,12 +9,12 @@ int main()
 {
     struct students s;
 
-    printf("Enter the nameof a student\n");
+    printf("Enter the name of a student\n");
     scanf("%s", &s.name);
     printf("Enter the roll number\n");
     scanf("%d", &s.roll_no);
 
-    printf("Student details:\nRoll No.\tName\n%d\t\t%s", s.roll_no, s.name);
+    printf("Student details \nRoll No.\t Name\n %d\t \t%s", s.roll_no, s.name);
 
     return 0;
 }

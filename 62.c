@@ -12,18 +12,18 @@ int main()
     int n, i;
     printf("Enter the number of students\n");
     scanf("%d", &n);
-    for (i = 0; i < n; i++)
+    for (i = 1; i <= n; i++)
     {
-        printf("Enter the name of student %d\n", i + 1);
+        printf("Enter the name of student %d\n", i );
         scanf("%s", &s[i].name);
-        printf("Enter roll number of student %d\n", i + 1);
+        printf("Enter roll number of student %d\n", i );
         scanf("%d", &s[i].roll_no);
-        printf("Enter grade of student %d\n", i + 1);
+        printf("Enter grade of student %d\n", i );
         getchar();
         scanf("%c", &s[i].grade);
     }
     printf("\nRoll No.\tName\t\tGrade\n");
-    for (i = 0; i < n; i++)
+    for (i = 1; i <=n; i++)
         printf("%d\t\t%s\t\t%c\n", s[i].roll_no, s[i].name, s[i].grade);
 
     return 0;

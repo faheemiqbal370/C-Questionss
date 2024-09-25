@@ -31,5 +31,5 @@ void search(int arr[], int n, int s)
       flag = 0;
     }
   if (flag == 1)
-    printf("Not found");
+    printf("Number Not found");
 }

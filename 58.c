@@ -12,9 +12,9 @@ int ack(int m, int n)
 int main()
 {
     int m, n;
-    printf("Enter m and n : ");
+    printf("Enter m and n ");
     scanf("%d %d", &m, &n);
-    printf("Ackerman(%d,%d) is %d .", m, n, ack(m, n));
+    printf("Ackerman(%d,%d) is %d ", m, n, ack(m, n));
 
     return 0;
 }

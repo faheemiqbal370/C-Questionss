@@ -26,7 +26,7 @@ int main()
         for (j = 0; j < n; j++)
             c[i][j] = a[i][j] * b[i][j];
     }
-    printf("Sum of two matrices is: \n");
+    printf("Sum of two matrices is\n");
     for (i = 0; i < m; i++)
     {
         for (j = 0; j < n; j++)

@@ -11,12 +11,12 @@ int main(){
     printf("Enter the number of students\n");
     scanf("%d",&n);
     float max = 0;
-    for(i=0;i<n;i++)
+    for(i=1;i<=n;i++)
     {   
-        printf("Enter the name of student %d\n",i+1);
+        printf("Enter the name of student %d\n",i);
         scanf("%s",&s[i].name);
         
-        printf("Enter roll number of student %d\n",i+1);
+        printf("Enter roll number of student %d\n",i);
         scanf("%d",&s[i].roll_no);
         
         printf("Enter the percentage obtained\n");

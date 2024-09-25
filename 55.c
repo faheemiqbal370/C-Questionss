@@ -2,7 +2,7 @@
 #include <stdio.h>
 int add(int x, int y);
 int sub(int x, int y);
-int main(void)
+int main()
 {
     int a, b;
     printf("Enter the two integers\n");

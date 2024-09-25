@@ -2,21 +2,21 @@
 #include <stdio.h>
 void sort(int *p, int n)
 {
-    int i, j, *q;
-    q = p;
-    for (i = 0; i < n - 1; i++)
+    int i,j,*q;
+    q=p;
+    for(i=0;i<n-1;i++)
     {
-        for (j = 0; j < n - i - 1; j++)
+        for(j=0;j<n-i-1;j++)
         {
-            if (*p > *(p + 1))
+            if(*p>*(p+1))
             {
-                int temp = *p;
-                *p = *(p + 1);
-                *(p + 1) = temp;
+                int temp=*p;
+                *p=*(p+1);
+                *(p+1)=temp;
             }
             p++;
         }
-        p = q;
+        p=q;
     }
 }
 int main()
@@ -26,7 +26,7 @@ int main()
     scanf("%d", &n);
     printf("Enter the elements of an array\n");
     p = arr;
-    for (i = 0; i < n; i++)
+    for(i=0;i<n;i++)
         scanf("%d", p++);
     p = arr;
     printf("The unsorted array is\n");

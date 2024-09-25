@@ -3,6 +3,7 @@
 int main()
 {
     char str[50],*p,*q;
+    int flag=1;
     printf("Enter the string\n");
     scanf("%s",str);
     p = str;
@@ -14,12 +15,15 @@ int main()
         {
             if(*p!=*q)
             {
-                printf("The %s is not a Palindrome.",str);
-                return 0;
+                printf("The %s is not a Palindrome",str);
+                flag=0;
             }
             q++,p--;
         } 
-    printf("The %s is a Palindrome.",str);       
+        if(flag==1)
+        {
+            printf("The %s is a Palindrome",str);
+        }       
     
     return 0;
 }

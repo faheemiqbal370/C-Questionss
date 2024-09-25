@@ -9,12 +9,13 @@ void main()
     scanf("%d%d", &a, &b);
     printf("Numbers before the swapping are %d %d\n", a, b);
     swap(a, b);
-    // return 0;
+    return 0;
 }
 void swap(int x, int y)
 {
-    int temp = x;
+    int temp; 
+    temp = x;
     x = y;
     y = temp;
-    printf("Numbers after  swapping: %d %d", x, y);
+    printf("Numbers after  swapping %d %d", x, y);
 }

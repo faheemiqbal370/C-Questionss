@@ -2,21 +2,21 @@
 #include<stdio.h>
 void swap(int *r,int *s)
 {
-  int temp = *r;
+  int temp;
+  temp = *r;
   *r=*s;
   *s=temp;
-    printf("The values after the swapping are %d  %d\n",*r,*s);
 }
+   
 int main()
 {
-  int* p,*q;
+
   int x,y;
   printf("Enter the two integers\n");
   scanf("%d %d",&x,&y);
-  p=&x;
-  q=&y;
-  printf("The values before the swapping are %d  %d\n",*p,*q);
-  swap(p,q);
-
+ 
+  printf("The values before the swapping are %d  %d\n",x,y);
+  swap(&x,&y);
+  printf("The values after the swapping are %d  %d\n",x,y);
   return 0;
 }
